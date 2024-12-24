@@ -48,7 +48,7 @@ namespace Task21
             {
                 root = new Tree<K, T>(x);
             }
-            if (Comparer<K>.Default.Compare(x.info.key, root1.info.key) == 1)
+            else if (Comparer<K>.Default.Compare(x.info.key, root1.info.key) == 1)
             {
                 if (root1.r == null)
                 {
